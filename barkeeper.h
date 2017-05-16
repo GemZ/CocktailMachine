@@ -13,7 +13,11 @@ class Barkeeper
 public:
     Barkeeper();
     int readConfig();
+        // reads config / initialize container, ingredients, cocktails
     void initScale();
+        // initialise/adjust scale
+    void initCocktails();
+        // checks if selected cocktails are available with configured container
 
 private:
     QVector<Container> _container;

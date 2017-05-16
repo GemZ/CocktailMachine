@@ -48,7 +48,7 @@ int Barkeeper::readConfig() {
            QDomElement slot = xmlSlot.toElement();
            qDebug() << "Append Container: id " << slot.attribute("id");
            // todo: write Container constructor for this to work:
-           //Container newContainer(slot.attribute("id"), slot.attribute("name"), slot.attribute("address"), slot.attribute("ingredient"));
+           //Container newContainer(slot.attribute("id").toInt(), slot.attribute("name"), slot.attribute("address"), slot.attribute("ingredient").toInt());
            //_container.append(newContainer);
        }
     }
