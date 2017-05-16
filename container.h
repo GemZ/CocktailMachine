@@ -9,12 +9,12 @@ class Container
 {
 public:
     Container();
+    Container(int id, QString name, QString gpioPort, int ingredientId);
 private:
+    int _id;
     QString _name;
     QString _gpioPort;
-    Ingredient _ingredient;
-    int _id;
-
+    int _ingredientId;
 
 };
 
